@@ -1,0 +1,78 @@
+.portal-App {
+  text-align: left;
+}
+
+.portal-App-logo {
+  height: 60px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .portal-App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.portal-App-header {
+  background-color: #282c34;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.portal-App-header a {
+  color: #61dafb;
+  font-size: 14px;
+  margin-left: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#portal-container {
+  min-height: calc(100vh - 200px);
+}
+.portal-app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.portal-App-link {
+  color: #61dafb;
+}
+
+@keyframes portal-App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.4);
+}
+.modal.visible {
+  display: block;
+}
+.portal-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.portal-login div {
+  margin-top: 20px;
+}
